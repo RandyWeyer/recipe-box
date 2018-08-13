@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './models/task.model';
 
 @Component({
   selector: 'recipe-box',
@@ -12,8 +13,4 @@ export class AppComponent {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   firstTask: Task = new Task("Finish weekend Angular homework for Epicodus course");
-}
-export class Task {
-  public done: boolean = false;
-  constructor(public description: string) { }
 }
